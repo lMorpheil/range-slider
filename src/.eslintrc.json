@@ -3,17 +3,13 @@
         "browser": true,
         "es2021": true
     },
-    "root": true,
-    "extends": ["airbnb", "airbnb-typescript", "plugin:node/recommended", "plugin:@typescript-eslint/recommended"],
-    "plugins": ["fsd", "@typescript-eslint"],
-    "parser": "@typescript-eslint/parser",
+    "extends": ["airbnb", "plugin:node/recommended"],
+    "plugins": ["fsd"],
     "parserOptions": {
         "ecmaVersion": 12,
-        "sourceType": "module",
-        "project": ["./tsconfig.json"]
+        "sourceType": "module"
     },
     "rules": {
-        "@typescript-eslint/rule-name": "error",
         "no-unused-vars": "warn",
         "no-console": "off",
         "func-names": "off",

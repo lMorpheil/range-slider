@@ -1,0 +1,12 @@
+.range-slider__line {
+  height: 5px;
+  background-color: green;
+  position: relative;
+}
+.range-slider__slider {
+  width: 5px;
+  height: 15px;
+  background-color: indianred;
+  position: absolute;
+  top: -5px;
+}

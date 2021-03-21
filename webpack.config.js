@@ -11,6 +11,8 @@ const uglifyJS = require('./webpack/js.uglify');
 const images = require('./webpack/images');
 const fonts = require('./webpack/fonts');
 const fs = require('fs');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const typeScript = require('./webpack/typeScript.js');
 
 const PATHS = {
@@ -29,8 +31,9 @@ const common = merge([
     devtool: 'inline-source-map',
     plugins: [
       new HtmlWebpackPlugin({
-        template: './demo/demo.pug',
+        template: './demo/demo.pug'
       }),
+      new CleanWebpackPlugin(),
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
