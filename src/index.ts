@@ -1,2 +1,2 @@
-require('./view/view');
+require('./view/view.js');
 import "./style/style.scss";

@@ -26,12 +26,12 @@ const common = merge([
     },
     output: {
       filename: '[name].js',
-      path: __dirname + '/dist'
+      path: __dirname + '/dist',
     },
     devtool: 'inline-source-map',
     plugins: [
       new HtmlWebpackPlugin({
-        template: './demo/demo.pug'
+        template: './demo/demo.pug',
       }),
       new CleanWebpackPlugin(),
       new webpack.ProvidePlugin({
@@ -55,4 +55,4 @@ module.exports = function (env) {
   if (env === 'development') {
     return merge([common, devserver(), sass(), css()]);
   }
-}
+};
