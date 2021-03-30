@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "",
-  "type": "module",
   "dependencies": {
     "air-datepicker": "^2.2.3",
     "cleave.js": "^1.6.0",

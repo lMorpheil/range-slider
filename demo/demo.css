@@ -1,3 +1,7 @@
+.demo__slider {
+  width: 500px;
+  margin: 0 auto;
+}
 .demo__single-slider {
   padding: 30px;
 }

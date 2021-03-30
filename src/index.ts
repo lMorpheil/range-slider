@@ -1,2 +1,5 @@
-require('./view/view.js');
-import "./style/style.scss";
+import './style/style.scss';
+import SingleSlider from './view/singleSlider';
+
+new SingleSlider();
+

@@ -1,20 +1,45 @@
-.range-slider__line {
+.range-slider__track {
   height: 5px;
   background-color: green;
-  position: relative;
 }
 .range-slider__slider {
-  width: 5px;
+  width: 8px;
   height: 15px;
-  background-color: indianred;
-  position: absolute;
+  background-color: red;
+  position: relative;
   top: -5px;
+  z-index: 10000;
 }
 .scale {
-  width: 100px;
+position: relative;
 }
 .scale__line {
-  background: coral;
-  height: 5px;
-  width: 1px;
+  background: blue;
+  height: 30px;
+  width: 2px;
+  position: absolute;
+}
+.scale__lien_size_long {
+  height: 20px;
+  width: 4px;
+}
+.scale__line_size_short {
+  height: 10px;
+ width: 3px;
+}
+.range-slider__flag {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  background: rgb(123, 255, 0);
+  color: rgb(24, 1, 61);
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 30px;
+  height: 20px;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
