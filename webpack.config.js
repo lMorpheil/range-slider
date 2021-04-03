@@ -22,7 +22,7 @@ const PATHS = {
 const common = merge([
   {
     entry: {
-      index: './src/index.ts',
+      index: './src/index.js',
     },
     output: {
       filename: '[name].js',
