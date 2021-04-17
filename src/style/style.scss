@@ -1,12 +1,14 @@
 .range-slider__track {
   height: 5px;
   background-color: green;
+  cursor: pointer;
+  position: relative;
 }
 .range-slider__slider {
   width: 8px;
   height: 15px;
   background-color: red;
-  position: relative;
+  position: absolute;
   top: -5px;
   cursor: pointer;
   z-index: 10000;
@@ -26,7 +28,7 @@ position: relative;
 }
 .scale__line_size_short {
   height: 10px;
- width: 3px;
+  width: 3px;
 }
 .range-slider__flag {
   position: absolute;

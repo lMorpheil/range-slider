@@ -42,6 +42,41 @@ html(lang="en")
           label.control-panel__label(for="") 
             input.control-panel__direction(type="radio" name="direction-one" checked)
             span Горизонтальный
+    .demo__single-slider
+      .demo__slider
+        #range-slider-db
+      .control-panel
+        .control-panel__wrapper
+          label.control-panel__label(for="") 
+            span Максимальное значение
+            input.control-panel__max-value(type="text")
+        .control-panel__wrapper
+          label.control-panel__label(for="") 
+            span Минимальное значение
+            input.control-panel__min-value(type="text")
+        .control-panel__wrapper
+          label.control-panel__label(for="") 
+            span Шаг
+            input.control-panel__step(type="text")
+        .control-panel__wrapper
+          label.control-panel__label(for="") 
+            span Текущее значение
+            input.control-panel__current-value(type="text")
+        .control-panel__wrapper_size_little
+          label.control-panel__label(for="") 
+            span Отображать флаг
+            input.control-panel__flag(type="checkbox")
+        .control-panel__wrapper_size_little
+          label.control-panel__label(for="") 
+            span Отображать шкалу
+            input.control-panel__scale(type="checkbox")
+        .control-panel__wrapper_size_little
+          label.control-panel__label(for="") 
+            input.control-panel__direction(type="radio" name="direction-one")
+            span Вертикальный
+          label.control-panel__label(for="") 
+            input.control-panel__direction(type="radio" name="direction-one" checked)
+            span Горизонтальный
   script(src="../demo/demo.js")
 
 

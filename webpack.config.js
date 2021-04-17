@@ -26,7 +26,7 @@ const common = merge([
     },
     output: {
       filename: '[name].js',
-      path: __dirname + '/dist',
+      path: path.resolve(__dirname + '/dist'),
     },
     devtool: 'inline-source-map',
     plugins: [
